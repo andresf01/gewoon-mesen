@@ -51,9 +51,11 @@ const NeedHelp = () => {
         <div className="px-2 py-1 fill-current text-white bg-blue-main rounded-lg">
           <NecesitoAyudaIcon width="48" height="48" />
         </div>
-        <div className="text-blue-main text-xl ml-4">Necesito ayuda con</div>
+        <div className="text-blue-main text-lg ml-4 font-medium">
+          Necesito ayuda con
+        </div>
       </div>
-      <div>
+      <div className="text-xs">
         Seleccione la categoria que mas se ajuste con el tipo de ayuda que usted
         necesita.
       </div>
@@ -67,7 +69,9 @@ const NeedHelp = () => {
         ))}
       </div>
       <AdditionalInfo />
-      <Button label="Siguiente" />
+      <div className="flex justify-center mt-2">
+        <Button className="w-40" label="Siguiente" />
+      </div>
     </div>
   );
 };

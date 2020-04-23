@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 
-const Button = ({ label, action = () => ({}) }) => {
+const Button = ({ label, action = () => ({}), className }) => {
   return (
     <div
       className={clsx([
@@ -17,6 +17,8 @@ const Button = ({ label, action = () => ({}) }) => {
         'ease-in-out',
         'transition-colors',
         'text-center',
+        'rounded-lg',
+        ...className.split(' '),
       ])}
       onClick={action}
     >

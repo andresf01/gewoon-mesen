@@ -47,15 +47,15 @@ const CanHelp = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="flex items-center mt-5">
+      <div className="flex items-center my-4">
         <div className="px-2 py-1 fill-current text-white bg-blue-main rounded-lg">
           <AyudarIcon width="48" height="48" />
         </div>
-        <div className="text-blue-main text-xl ml-4 font-medium">
+        <div className="text-blue-main text-lg ml-4 font-medium">
           Puedo ayudar con
         </div>
       </div>
-      <div className="mt-4">
+      <div className="text-xs">
         Seleccione la categoria que más se ajuste con el tipo de ayuda que usted
         puede brindar.
       </div>
@@ -69,7 +69,9 @@ const CanHelp = () => {
         ))}
       </div>
       <AdditionalInfo />
-      <Button label="Siguiente" />
+      <div className="flex justify-center mt-2">
+        <Button className="w-40" label="Siguiente" />
+      </div>
     </div>
   );
 };

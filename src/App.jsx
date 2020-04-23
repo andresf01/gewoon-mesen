@@ -7,7 +7,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="font-sans">
+      <div className="font-sans m-4">
         <Route path="/" exact component={Home} />
         <Route path="/canHelp" exact component={CanHelp} />
         <Route path="/needHelp" exact component={NeedHelp} />
